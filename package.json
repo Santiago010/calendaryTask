@@ -1,0 +1,12 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

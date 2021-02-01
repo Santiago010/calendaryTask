@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script
+      defer
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+    ></script>
+    <div class="container-principal">
+      <div class="container-calendar">
+        <div class="calendar__info">
+          <div class="btn__prev">&#9664;</div>
+          <div class="calendar__month"></div>
+          <div class="calendar__year"></div>
+          <div class="btn__next">&#9654;</div>
+        </div>
+        <div class="calendar__week">
+          <div class="caledar__day item">MON</div>
+          <div class="caledar__day item">MAR</div>
+          <div class="caledar__day item">MIR</div>
+          <div class="caledar__day item">JUE</div>
+          <div class="caledar__day item">VIE</div>
+          <div class="caledar__day item">SAB</div>
+          <div class="caledar__day item">DOM</div>
+        </div>
+        <div class="calendar__dates"></div>
+      </div>
+      <div class="container-category">
+        <h1>Categorias</h1>
+        <form>
+          <label for="color">Color:</label>
+          <input name="color" type="color" class="input-color" />
+          <input
+            name="category"
+            type="text"
+            class="input-category"
+            placeholder="Categoria"
+          />
+          <input
+            name="date"
+            type="text"
+            class="input-date"
+            readonly="readonly"
+            placeholder="Fecha"
+          />
+          <textarea
+            name="task"
+            class="text-area"
+            placeholder="Escribe tu tarea"
+            cols="40"
+            rows="4"
+          ></textarea>
+          <button type="submit" class="btn-add">Añadir tarea</button>
+        </form>
+      </div>
+      <div class="container-task">
+        <div class="container-task-header">
+          <h1>Tareas Pendientes</h1>
+          <div>
+            <button>Eliminar todas las tareas</button>
+          </div>
+        </div>
+        <div class="container-task-list">
+          <div class="container-provisional">
+            <p>Aun no hay tareas pendientes</p>
+            <img src="./docs/undraw_complete_task_u2c3.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
